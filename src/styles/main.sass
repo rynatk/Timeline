@@ -22,10 +22,9 @@ body
   margin-left: auto
   margin-right: auto
 
-/*___________________________________*/
+/*__________________________________*/
 
 .row1 .column1
-  background: white
   width: 13%
 
 .row1 .column1 .time
@@ -38,14 +37,23 @@ body
   width: 5%
 
 .row1 .column2 .icon
+  display: block
+  width: 100%
+  margin-left: auto
+  margin-right: auto
   position: absolute
   z-index: +1
+
+.row1 .column2 .icon img
+  display: block
+  margin-left: auto
+  margin-right: auto
 
 .row1 .column2 .narrow
   position: absolute
   height: 200px
   width: 6px
-  background: royalblue
+  background: purple
   position: relative
   margin-left: auto
   margin-right: auto
@@ -65,12 +73,13 @@ body
   height: 0
   border-style: solid
   border-width: 9px 9px 9px 0
-  border-color: transparent royalblue transparent transparent
+  border-color: transparent orange transparent transparent
+
 
 /*___________________________________*/
 
 .row1 .column4
-  background: royalblue
+  background: orange
   width: 80%
   border-style: hidden
   border-radius: 10px
@@ -107,14 +116,23 @@ body
   width: 5%
 
 .row2 .column2 .icon
+  display: block
+  width: 100%
+  margin-left: auto
+  margin-right: auto
   position: absolute
   z-index: +1
+
+.row2 .column2 .icon img
+  display: block
+  margin-left: auto
+  margin-right: auto
 
 .row2 .column2 .narrow
   position: absolute
   height: 200px
   width: 6px
-  background: royalblue
+  background: purple
   position: relative
   margin-left: auto
   margin-right: auto
@@ -134,13 +152,13 @@ body
   height: 0
   border-style: solid
   border-width: 9px 9px 9px 0
-  border-color: transparent royalblue transparent transparent
+  border-color: transparent orange transparent transparent
 
 
 /*___________________________________*/
 
 .row2 .column4
-  background: royalblue
+  background: orange
   width: 80%
   border-style: hidden
   border-radius: 10px
@@ -161,3 +179,28 @@ body
   margin-right: auto
   padding-top: 10px
   border-top: (solid 1px white)
+
+
+  /* @media conditions _________________*/
+
+@media (max-width: 600px)
+    .row1
+      height: 350px
+    .row2
+      height: 350px
+    .row1 .column2 .narrow
+      height: 350px
+    .row2 .column2 .narrow
+      height: 350px
+    .row1 .column2
+      width: 15%
+    .row2 .column2
+      width: 15%
+    .row1 .column2 .icon img
+      width: 100%
+    .row2 .column2 .icon img
+      width: 100%
+    .row1 .column1
+      width: 30%
+    .row2 .column1
+      width: 30%
